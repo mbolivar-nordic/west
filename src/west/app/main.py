@@ -758,6 +758,8 @@ def main(argv=None):
     # Silence validation errors from pykwalify, which are logged at
     # logging.ERROR level. We want to handle those ourselves as
     # needed.
+    print('--- west, pete voodoo edition ---')
+
     logging.getLogger('pykwalify').setLevel(logging.CRITICAL)
 
     # Makes ANSI color escapes work on Windows, and strips them when
