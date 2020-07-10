@@ -140,7 +140,7 @@ class WestApp:
         # from the manifest itself, which we have failed to load.)
 
         # A few commands are always safe to run without a manifest.
-        no_manifest_ok = ['help', 'config', 'topdir', 'init', 'manifest']
+        no_manifest_ok = ['help', 'config', 'topdir', 'init', 'manifest', 'update']
 
         # Handle ManifestVersionError is a special case.
         if isinstance(self.mle, ManifestVersionError):
