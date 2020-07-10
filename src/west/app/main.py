@@ -172,6 +172,7 @@ class WestApp:
 
         if args.command not in no_manifest_ok:
             if isinst(MalformedManifest, MalformedConfig):
+                import traceback; traceback.print_stack()
                 log.die('\n  '.join(["can't load west manifest"] +
                                     list(self.mle.args)))
             elif isinst(FileNotFoundError):
